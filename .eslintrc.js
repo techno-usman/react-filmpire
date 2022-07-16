@@ -18,5 +18,9 @@ module.exports = {
     'react',
   ],
   rules: {
+    'react/jsx-filename-extension': [2, { 'extensions': ['.js', '.jsx'] }],
+    "eol-last": 0,
+    "no-multiple-empty-lines": ["error", { "max": 1, "maxEOF": 0 }],
+    "linebreak-style": ["error", process.env.NODE_ENV === 'prod' ? "unix" : "windows"],
   },
 };
